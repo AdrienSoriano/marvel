@@ -221,7 +221,7 @@ footer i{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /*PHONE*/
   .accueil{
       height: 100%;
-      background-image: url(../images/backgroundcomics.png);
+      background-image: url(assets/backgroundcomics.png);
       /* display: flex;
       align-items: center;
       justify-content: space-around; */
@@ -260,6 +260,11 @@ footer i{
    visibility: hidden;
    display: none;
  }
+.round{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
   
 }
 
