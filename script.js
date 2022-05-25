@@ -1,19 +1,81 @@
 // 1&apikey- clé publique
 // hash = https://cryptii.com/pipes/md5-hash hacher sur ce lien mettre chiffre 1clé privée clé publique (tout attaché) et placer le resultat après =
-
-const url =
-  "https://gateway.marvel.com:443/v1/public/comics/91620?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
-const lifeStory6 = document.querySelector(".lifeStory6");
 const avatar = document.querySelector('.round');
+
+
+/* function changeId(id){ */
+const url = `https://gateway.marvel.com:443/v1/public/comics/91615?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d`;
+
 
 fetch(url)
   .then((resp) => resp.json())
-  .then((data) => {
-    console.log(data.data.results);
-    
-    /* lifeStory6.src = data.data.results[0].images[0].path + ".jpg"; */
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics1');
+    const link = document.querySelector('.linkComics1')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
+  }); 
+
+  const url2 = "https://gateway.marvel.com:443/v1/public/comics/91616?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
+  
+  fetch(url2)
+  .then((resp) => resp.json())
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics2');
+    const link = document.querySelector('.linkComics2')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
   });
 
+  const url3 = "https://gateway.marvel.com:443/v1/public/comics/91617?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
+  
+  fetch(url3)
+  .then((resp) => resp.json())
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics3');
+    const link = document.querySelector('.linkComics3')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
+  });
+
+  const url4 = "https://gateway.marvel.com:443/v1/public/comics/91618?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
+  
+  fetch(url4)
+  .then((resp) => resp.json())
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics4');
+    const link = document.querySelector('.linkComics4')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
+  });
+
+  const url5 = "https://gateway.marvel.com:443/v1/public/comics/91619?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
+  
+  fetch(url5)
+  .then((resp) => resp.json())
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics5');
+    const link = document.querySelector('.linkComics5')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
+  });
+
+  const url6 = "https://gateway.marvel.com:443/v1/public/comics/91620?ts=1&apikey=bdfb2d1e4535176c82d3c714057f22f6&hash=427e8cb56a0d0612f1bcb9a42246507d";
+  
+  fetch(url6)
+  .then((resp) => resp.json())
+  .then((apiMarvel) => {
+    console.log(apiMarvel.data.results[0]);
+    const image = document.querySelector('.imgComics6');
+    const link = document.querySelector('.linkComics6')
+    image.src = apiMarvel.data.results[0].images[0].path + ".jpg";
+    link.href = apiMarvel.data.results[0].urls[0].url;
+  });
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
     // open

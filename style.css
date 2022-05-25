@@ -1,11 +1,20 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   /* width: 100vw;*/
     height: 100vh; 
     background-color: #eaeaea;
 }
+h1{
+  font-family: 'Bangers'!important;
+}
+p{
+  font-family: 'Public Sans'!important;
+}
+
 /* 
 nav{
     display: none!important;
@@ -204,6 +213,11 @@ transform: translateX(0);
 footer i{
     font-size: 100px;
 }
+.round{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 @media screen and (max-width: 500px) {
     /* nav{
@@ -211,7 +225,8 @@ footer i{
     } */
     footer i{
         font-size: 50px;
-    }
+    } 
+    
 }
 
 
@@ -233,7 +248,7 @@ footer i{
   .conttitre{
       height: 15%;
       width: 75%;
-      background: rgba(245, 245, 245, 0.58);
+      background: rgba(27, 27, 27, 0.58);
       display: flex;
       justify-content: center;
       align-items: center;
